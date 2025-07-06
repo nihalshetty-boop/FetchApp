@@ -60,14 +60,15 @@ app/
 │   │   └── rv_row.xml
 │   ├── mipmap/
 │   ├── values/
-│   │   ├── colors.xml
-│   │   ├── colors.xml (night)
+│   │   ├── colors/
+│   │   │   ├── colors.xml
+│   │   │   ├── colors.xml (night)
 │   │   ├── ic_launcher_background.xml
 │   │   ├── strings.xml
-│   │   ├── themes.xml
-│   │   └── themes.xml (night)
+│   │   ├── themes/
+│   │   │   ├── themes.xml
+│   │   │   └── themes.xml (night)
 │   └── xml/
-├── res/ (generated)
 └── Gradle Scripts/
     ├── build.gradle.kts (Project: FetchApp)
     └── build.gradle.kts (Module :app)
@@ -84,7 +85,7 @@ This file contains the crux of the project. It handles the fetching, filtering, 
 
 - `updateUI(requests: List<Request>)` sets `RVAdapter` to show the full unfiltered list. Also updates the toolbar subtitle to show the unfiltered list's count.
 
-- `applyFilter(requests: List<Request>)` sets `RVAdapter` to show the modified list `finalList` after filtering, sorting and grouping. Grouping converts it to a map, so it had to be flattened to a list and keep the data in the form of it's grouped headers and request items. Also updates the toolbar subtitle to show the finalList's count compared to the original.
+- `applyFilter(requests: List<Request>)` sets `RVAdapter` to show the modified list `finalList` after filtering, sorting and grouping. Grouping converts it to a map, so it had to be flattened to a list and keep the data in the form of it's grouped headers and request items. Also updates the toolbar subtitle to show the finalList's count (minus the group count) compared to the original.
 
 `RVAdapter.kt`: 
 This file is a RecyclerView.Adapter implementation that supports two types of views- Group headers and Individual request rows.
