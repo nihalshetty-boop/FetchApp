@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#263238</color>
+    <color name="colorPrimaryVariant">#1C262B</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <color name="colorSecondary">#FF8F00</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+
+    <color name="colorBackground">#121212</color>
+    <color name="colorSurface">#1A1A1A</color>
+    <color name="colorOnBackground">#FFFFFF</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+
+    <color name="groupHeaderBackground">#212121</color>
+    <color name="cardBackground">#1E1E1E</color>
+
+    <color name="buttonText">#FFFFFF</color>
+    <color name="buttonBackground">#333333</color>
+
+    <color name="colorError">#CF6679</color>
+</resources>
